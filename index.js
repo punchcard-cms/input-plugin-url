@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Url Input Plugin
  *
