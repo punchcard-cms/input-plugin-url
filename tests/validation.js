@@ -1,37 +1,30 @@
 import test from 'ava';
 import validation from '../lib/validation';
 
+
 const input = {
   target: {
     name: 'url',
-    value: 'foo bar baz',
-  },
-  all: {
-    url: 'foo bar baz',
+    value: 'cats.com',
   },
 };
 
-const settings = {
+const badInput = {
   target: {
-    empty: false,
-  },
-  all: {
-    url: {
-      empty: false,
-    },
+    name: 'url',
+    value: 'lol no',
   },
 };
-
 
 // Valid input
 test('valid input', t => {
-  t.true(validation(input, settings), 'Valid input returns true');
+  t.true(validation(input), 'Valid input returns true');
 });
 
-// Invalid input
-test('validate correct input', t => {
-  const ip = input;
-  ip.target.value = '';
+test('validate text is url', t => {
+  t.true(validation(input), 'Must be an actual url');
+});
 
-  t.is(validation(ip, settings), 'url cannot be left blank!', 'Return string if not valid');
+test('validate bad url throws error', t => {
+  t.is(validation(badInput), 'Not a valid url.', 'Return error if url is invalid');
 });
