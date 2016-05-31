@@ -5,7 +5,7 @@ import validation from '../lib/validation';
 const input = {
   target: {
     name: 'url',
-    value: 'ibm.com',
+    value: 'cats.com',
   },
 };
 
