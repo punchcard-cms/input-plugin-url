@@ -1,5 +1,6 @@
 {
   "name": "input-plugin-url",
+  "version": "0.0.0",
   "keywords": "punchcard-cms",
   "description": "A simple Url input plugin",
   "main": "index.js",
