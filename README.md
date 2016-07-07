@@ -11,7 +11,5 @@ Apache-2.0
 [npm-url]: https://npmjs.org/package/input-plugin-url
 [travis-image]: https://travis-ci.org/punchcard-cms/input-plugin-url.svg
 [travis-url]: https://travis-ci.org/punchcard-cms/input-plugin-url
-[daviddm-image]: https://david-dm.org/punchcard-cms/input-plugin-url.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/punchcard-cms/input-plugin-url
 [coveralls-image]: https://coveralls.io/repos/punchcard-cms/input-plugin-url/badge.svg
 [coveralls-url]: https://coveralls.io/r/punchcard-cms/input-plugin-url
